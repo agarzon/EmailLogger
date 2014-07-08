@@ -25,7 +25,7 @@ _[Manual]_
 _[GIT Submodule]_
 
 In your app directory type:
-<pre><code>git submodule add git@github.com:agarzon/EmailLogger.git Plugin/EmailLogger
+<pre><code>git submodule add git@github.com:agarzon/EmailLogger.git app/Plugin/EmailLogger
 git submodule init
 git submodule update
 </code></pre>
