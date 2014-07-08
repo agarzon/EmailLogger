@@ -5,20 +5,19 @@ Optional configuration for log levels to send emails, by default to all core log
 
 h2. Background
 
-This plugin was developed when playing with a shared @phpfog CakePHP installation.
-No shell and/or file access there. This plugin is just a quick and dirty way check
+This plugin is just a quick and dirty way check
 your app without turning debug on, or check errors that only occur with debug off.
 
 h2. Requirements
 
 * PHP 5.3
-* CakePHP 2.4.x (CakePHP pre-2.4 checkout commit @eef768d7273dc9ffb50f6cc371e79d5de9e5e20c)
+* CakePHP 2.4.x
 
 h2. Installation
 
 _[Manual]_
 
-# Download this: http://github.com/ceeram/EmailLogger/zipball/master
+# Download this: http://github.com/agarzon/EmailLogger/zipball/master
 # Unzip that download.
 # Copy the resulting folder to app/Plugin
 # Rename the folder you just copied to EmailLogger
@@ -26,7 +25,7 @@ _[Manual]_
 _[GIT Submodule]_
 
 In your app directory type:
-<pre><code>git submodule add git://github.com/ceeram/EmailLogger.git Plugin/EmailLogger
+<pre><code>git submodule add git@github.com:agarzon/EmailLogger.git Plugin/EmailLogger
 git submodule init
 git submodule update
 </code></pre>
@@ -34,7 +33,7 @@ git submodule update
 _[GIT Clone]_
 
 In your plugin directory type
-<pre><code>git clone git://github.com/ceeram/EmailLogger.git EmailLogger</code></pre>
+<pre><code>git clone git@github.com:agarzon/EmailLogger.git EmailLogger</code></pre>
 
 h2. Usage
 
@@ -61,24 +60,3 @@ Set 'levels' => array('logger') and it wont ever send out emails for core errors
 and add CakeLog::write('logger', 'Log this'); or $this->log('Log this', 'logger');
 to the code you want to debug.
 
-h2. License
-
-Copyright (c) 2012 Ceeram
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
